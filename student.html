@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students</title>
+    <!-- umumiy stillar (header, modal, tugma) -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- student kartasi stillari -->
+    <link rel="stylesheet" href="./css/student.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <h3 class="logo"><a href="./student.html">Students</a></h3>
+
+        <div class="links">
+          <a class="link" href="./student.html">Student</a>
+          <a class="link" href="./index.html">Users</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="c-user">
+        <div class="container c-user-container">
+          <button class="add-user">Add Student</button>
+        </div>
+      </section>
+
+      <section class="users-wrapper">
+        <div class="container users-container"></div>
+
+        <div class="modal-overlay hidden" id="studentModal">
+          <div class="modal">
+            <div class="modal__header">
+              <h2 class="modal__title">Yangi student qo'shish</h2>
+              <button type="button" class="modal__close" aria-label="Yopish">
+                &times;
+              </button>
+            </div>
+
+            <form class="modal__form" id="addStudentForm">
+              <div class="modal__field">
+                <label class="modal__label" for="studentName"
+                  >Ism va familiya</label
+                >
+                <input
+                  class="modal__input"
+                  type="text"
+                  id="studentName"
+                  name="fullName"
+                  placeholder="Masalan: Sardor Qodirov"
+                  required
+                />
+              </div>
+
+              <div class="modal__field">
+                <label class="modal__label" for="studentAge">Yoshi</label>
+                <input
+                  class="modal__input"
+                  type="number"
+                  id="studentAge"
+                  name="age"
+                  min="10"
+                  max="100"
+                  placeholder="20"
+                  required
+                />
+              </div>
+
+              <div class="modal__field">
+                <label class="modal__label" for="studentCourse">Kurs</label>
+                <select class="modal__select" id="studentCourse" name="course">
+                  <option value="Frontend Development">
+                    Frontend Development
+                  </option>
+                  <option value="Backend Development">
+                    Backend Development
+                  </option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="Mobile Development">Mobile Development</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="QA Engineering">QA Engineering</option>
+                </select>
+              </div>
+
+              <div class="modal__field">
+                <label class="modal__label" for="studentGrade"
+                  >Baho (0-100)</label
+                >
+                <input
+                  class="modal__input"
+                  type="number"
+                  id="studentGrade"
+                  name="grade"
+                  min="0"
+                  max="100"
+                  placeholder="90"
+                  required
+                />
+              </div>
+
+              <div class="modal__checkbox-group">
+                <input
+                  class="modal__checkbox"
+                  type="checkbox"
+                  id="studentGraduated"
+                  name="isGraduated"
+                />
+                <label class="modal__checkbox-label" for="studentGraduated"
+                  >Bitirgan (isGraduated)</label
+                >
+              </div>
+
+              <div class="modal__actions">
+                <button type="reset" class="modal__btn modal__btn--reset">
+                  Tozalash
+                </button>
+                <button type="submit" class="modal__btn modal__btn--submit">
+                  Saqlash
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/student.js"></script>
+  </body>
+</html>

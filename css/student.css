@@ -1,0 +1,99 @@
+.student-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid rgba(32, 0, 128, 0.738);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.student-card__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.student-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.student-card__info {
+  overflow: hidden;
+}
+
+.student-card__name {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.student-card__course {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.student-card__details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.student-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.student-card__grade {
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 6px;
+}
+
+.student-card__status {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.student-card__status--graduated {
+  color: #16a34a;
+}
+
+.student-card__status--studying {
+  color: #dc2626;
+}
