@@ -53,6 +53,23 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.student-card__delete-btn {
+  margin-left: auto;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #dc2626;
+  background-color: #fef2f2;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.student-card__delete-btn:hover {
+  background-color: #fee2e2;
+}
 
 .student-card__course {
   margin: 0;
